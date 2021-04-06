@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class PostList extends Component {
+class PostsList extends Component {
     render() {
         const {posts} = this.props;
         return (
@@ -59,4 +60,7 @@ class PostList extends Component {
     }
 }
 
-export default PostList;
+ PostsList.propTypes = {
+   posts: PropTypes.array.isRequired
+ }
+export default PostsList;
