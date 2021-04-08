@@ -8,7 +8,7 @@ function Navbar(props) {
             <Link to="/">
           <img
             src="https://ninjasfiles.s3.amazonaws.com/0000000000003454.png"
-            alg="logo"
+            alt="logo"
           />
           </Link>
         </div>
