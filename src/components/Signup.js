@@ -34,11 +34,13 @@ class Signup extends Component {
         <span className="login-signup-header">Signup</span>
         {error && <div className="alert error-dailog">{error}</div>}
         <div className="field">
+        
           <input
             placeholder="Name"
             type="text"
             required
-            onChange={(e) => this.handleInputchange('name', e.target.value)}
+            //   required ref={this.emailInputRef}
+            onChange={(e) => this.handleInputChange('name', e.target.value)}
           />
           <input
             placeholder="Email"
