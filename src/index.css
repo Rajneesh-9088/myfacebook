@@ -397,6 +397,7 @@ nav .nav-links ul li:hover {
 .field input:focus {
   outline: none;
 }
+
 .field button {
   width: 100%;
   margin-top: 20px;
@@ -411,7 +412,9 @@ nav .nav-links ul li:hover {
 .field button:hover {
   cursor: pointer;
 }
-
+.field button:disabled {
+  cursor: not-allowed;
+}
 /* SETTINGS and USERPROFILE */
 .settings {
   display: inline-flex;

@@ -2,9 +2,9 @@ export function getFormBody(params) {
     let formBody = []
 
     for(let property in params){
-        let encodedKey = encodedURIComponent(property);
-        let encodedVal = encodedURIComponent(params[property])
-        formBody[encodedKey + '=' + encodedVal];
+        let encodedKey = encodeURIComponent(property);
+        let encodedVal = encodeURIComponent(params[property])
+        formBody.push(encodedKey + '=' + encodedVal);
     }
     return formBody.join('&');
 }
