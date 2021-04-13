@@ -46,6 +46,7 @@ code {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+  text-align: center;
 }
 .success-dailog {
   color: #155724;
@@ -167,11 +168,12 @@ code {
   color: #757575;
 }
 .post-comment-header .post-comment-time {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 14px;
   color: #9e9e9e;
   margin-left: 8px;
 }
+
 .post-comment-header .post-comment-likes {
   font-size: 12px;
   line-height: 16px;
@@ -180,7 +182,7 @@ code {
 }
 .post-comment-content {
   margin-top: 7px;
-  font-family: Open Sans;
+  /* font-family: Open Sans; */
   
 }
 .post-comments-list .comment-like {
@@ -377,7 +379,7 @@ nav .nav-links ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 35%;
   margin: 50px auto;
   border-radius: 6px;
 }

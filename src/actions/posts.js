@@ -13,7 +13,7 @@ export function fetchPosts() {
       })
       .then((data) => {
         console.log('response', data);
-        dispatch(updatePosts(data));
+        dispatch(updatePosts(data.data.posts));
       });
   };
 }

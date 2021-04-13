@@ -1,5 +1,5 @@
 import { APIUrls } from '../helpers/urls';
-import { AUTHENTICATE_USER, LOGIN_FAILED, LOGIN_START, LOGIN_SUCCESS, LOG_OUT, SIGNUP_FAILED, SIGNUP_SUCCESS,  SIGNUP_START } from './actionTypes';
+import { AUTHENTICATE_USER, LOGIN_FAILED, LOGIN_START, LOGIN_SUCCESS, LOG_OUT, SIGNUP_FAILED, SIGNUP_SUCCESS,  SIGNUP_START, CLEAR_AUTH_STATE } from './actionTypes';
 import { getFormBody } from '../helpers/utils';
 
 export function startLogin() {
@@ -53,7 +53,7 @@ export function signup(email,password,confirmPassword,name){
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: ({
+        body: getFormBody({
           email,
           password,
           confirm_password: confirmPassword,
@@ -102,5 +102,11 @@ export function signupSuccessful(user) {
   return {
     type: SIGNUP_SUCCESS,
     user,
+  }
+}
+
+export function clearAuthState() {
+  return {
+     type: CLEAR_AUTH_STATE
   }
 }
